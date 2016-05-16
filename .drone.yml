@@ -1,0 +1,11 @@
+publish:
+  docker:
+    repo: lib/active-tick-server
+    tag:
+      - '$${BRANCH/master/latest}'
+      - '$$BRANCH.$$BUILD_NUMBER'
+    registry: docker.stackdot.com
+    username: $$DRONE_REGISTRY_USER
+    password: $$DRONE_REGISTRY_PASS
+    email: drone@stackdot.com
+    storage_driver: overlay
