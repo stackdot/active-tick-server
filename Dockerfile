@@ -1,5 +1,3 @@
-[![Build Status](https://drone.stackdot.com/api/badges/stackdot/active-tick-server/status.svg)](https://drone.stackdot.com/stackdot/active-tick-server)
-
 FROM ubuntu:14.04
 
 RUN apt-get update; apt-get install wget -y
